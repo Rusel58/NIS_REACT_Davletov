@@ -1,0 +1,22 @@
+# Обязательно
+node_modules/
+
+# Запрет .env / локальных конфигов
+.env
+.env.*
+!.env.example  # оставь только шаблон
+
+# Рекомендуемо (артефакты сборки/тестов/IDE)
+dist/
+build/
+coverage/
+*.tsbuildinfo
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+node_modules/
+.env
+.env.*
+!.env.example
