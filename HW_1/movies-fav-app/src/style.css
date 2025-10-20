@@ -1,0 +1,138 @@
+:root {
+  --bg: #0b0c10;
+  --panel: #121318;
+  --text: #e6e6e6;
+  --muted: #9aa0a6;
+  --accent: #ffd54f;
+  --border: #22242c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1080px;
+  margin: 24px auto 48px;
+  padding: 0 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.btn {
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover { background: #1a1c23; }
+.btn.active { background: #272a33; border-color: #2f3340; }
+
+.input {
+  padding: 8px 12px;
+  background: #0e1016;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text);
+  min-width: 240px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  gap: 12px;
+}
+
+.card.grid {
+  flex-direction: column;
+}
+
+.card.list {
+  flex-direction: row;
+  align-items: center;
+}
+
+.poster {
+  width: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  background: #111218;
+}
+
+.poster.list {
+  width: 96px;
+  height: 144px;
+  flex: 0 0 auto;
+}
+
+.card-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.movie-title { font-weight: 700; line-height: 1.3; }
+.movie-year  { color: var(--muted); font-size: 14px; }
+
+.star {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+}
+.star[aria-pressed="true"] { color: var(--accent); }
+.empty { color: var(--muted); text-align: center; padding: 48px 0; }
