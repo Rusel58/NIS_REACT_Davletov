@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Pixel Tiger",
+    "species": "Cyber-Tiger",
+    "mood": "happy",
+    "energy": 80,
+    "level": 3,
+    "avatar": "https://i.pinimg.com/736x/cb/90/67/cb90672dd9c5c9c77cd15927827a85f2.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Neon Fox",
+    "species": "Holo-Fox",
+    "mood": "neutral",
+    "energy": 55,
+    "level": 2,
+    "avatar": "https://avatars.mds.yandex.net/i?id=4418ed295ffca94b002b68502457db6b_l-5221567-images-thumbs&n=13"
+  },
+  {
+    "id": 3,
+    "name": "Bit Panda",
+    "species": "Robo-Panda",
+    "mood": "sad",
+    "energy": 25,
+    "level": 1,
+    "avatar": "https://i.pinimg.com/474x/c0/5d/0f/c05d0f6aa75be42fc5ae844d06487dc4.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Glitch Owl",
+    "species": "Cyber-Owl",
+    "mood": "happy",
+    "energy": 100,
+    "level": 5,
+    "avatar": "https://i.pinimg.com/736x/3b/19/2d/3b192d0f91857940b4fe3579b94b663f.jpg"
+  }
+]
